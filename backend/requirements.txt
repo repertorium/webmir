@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+pydantic
+PyJWT
+requests
+tqdm
+beautifulsoup4
+numpy>=1.26,<1.27
+pillow
+torchinfo
+lightning
+ultralytics
+Biopython
+joblib
+roman
+

@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  frontend:
+    build: ./frontend
+    container_name: webmir-frontend
+    ports:
+      - "127.0.0.1:9000:80"
+    restart: always
+
+  backend:
+    build: ./backend
+    env_file:
+      - .env
+    container_name: webmir-backend
+    ports:
+      - "127.0.0.1:9001:8000"
+    restart: always
